@@ -1,0 +1,96 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(140deg, #0099ff, #0077ff);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px; /* Moved higher */
+  }
+  
+  /* To-Do Box */
+  
+  .toDo {
+    width: 95%;
+    max-width: 500px;
+    background: linear-gradient(140deg, #e2e8ec, #878f97);
+    padding: 40px 30px 150px; /* Increased height for more space */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toDo h2 {
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Data */
+  
+  .row {
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  .AddTask {
+    border: none;
+    outline: none;
+    background: #4e0801;
+    color: #edeef0;
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+  }
+  
+  .AddTask:hover {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .toDo {
+      width: 90%;
+      padding: 30px 30px 150px; /* More space on mobile */
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+  
+    input {
+      padding: 12px;
+      flex: 1;
+    }
+  
+    .AddTask {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
+  
